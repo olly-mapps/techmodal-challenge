@@ -25,5 +25,8 @@ We wish to implement two key ideas:
 - An optimisation procedure, perhaps in the form of a LP/MIP.
 - Some ML model to predict future sales. 
 
+## Questions for Mr Haulage 
+
+- How often to do you replace your fleet?
 
 
