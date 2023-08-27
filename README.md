@@ -24,8 +24,10 @@ We allocate the fleet according to order data, stored in `orders.csv`, and the i
 We wish to implement two key ideas:
 
 ### Forecasting Method
-- Our time series is event driven, so we first need to determine the daily order quantity and type
+- Our time series is event driven, so we first need to determine the daily order quantity and type  :white_check_mark:
 - We will also analyse relationships to determine if there are any other useful predictors
+  - <strike> Delivery region could be used </strike> 
+  - Order IDs? (Do some graphs for this)
 - Using this we can implement some time series forecasting method
   
 ### Optimisation Method
@@ -33,5 +35,6 @@ We wish to implement two key ideas:
 
 ## Questions for Mr Haulage 
 - How often to do you replace your fleet?
+- What is the fuel cost per distance, this way we could break your delivery routes down and optimise that as well.
 
 
