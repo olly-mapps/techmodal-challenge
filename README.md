@@ -22,11 +22,16 @@ We allocate the fleet according to order data, stored in `orders.csv`, and the i
 ## Methodology 
 
 We wish to implement two key ideas:
-- An optimisation procedure, perhaps in the form of a LP/MIP.
-- Some ML model to predict future sales. 
+
+### Forecasting Method
+- Our time series is event driven, so we first need to determine the daily order quantity and type
+- We will also analyse relationships to determine if there are any other useful predictors
+- Using this we can implement some time series forecasting method
+  
+### Optimisation Method
+- An optimisation procedure to determine fleet allocation, perhaps in the form of a LP/MIP. 
 
 ## Questions for Mr Haulage 
-
 - How often to do you replace your fleet?
 
 
