@@ -25,9 +25,9 @@ We wish to implement two key ideas:
 
 ### Forecasting Method
 - Our time series is event driven, so we first need to determine the daily order quantity and type  :white_check_mark:
-- We will also analyse relationships to determine if there are any other useful predictors
+- We will also analyse relationships to determine if there are any other useful predictors ✅
   - <strike> Delivery region could be used </strike> 
-  - Order IDs? (Do some graphs for this)
+  - <strike> Order IDs? (Do some graphs for this) </strike>
 - Using this we can implement some time series forecasting method
   
 ### Optimisation Method
