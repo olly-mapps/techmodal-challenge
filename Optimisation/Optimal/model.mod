@@ -26,13 +26,14 @@ param d_s{d in Days};
 
 ## DECISION VARIABLES ## 
 
-var t_s integer >= 0;
-var t_l integer >= 0; 
+var t_s{d in Days} integer >= 0;
+var t_l{d in Days} integer >= 0; 
 
 ## OBJECTIVE ## 
 
 minimize Total_Cost:
-	t_l * (uc_l + dc_l + fc_l) + t_s * (uc_s + dc_s + fc_s);
+	sum{d in Days} t_l[d] * (dc_l + fc_l)
+	+ sum{d in Days} t_s[d] * (dc_s + fc_s);
 	
 ## CONSTRAINTS ##
 
@@ -41,7 +42,11 @@ subject to
 # Demand Requirement
 
 Large_Demand {d in Days}:
-	t_l >= d_l[d];
+	t_l[d] >= d_l[d];
 	
+# Uncomment for optimal solution 
 Small_Demand {d in Days}:
-	t_s + 4*t_l >= d_s[d];
+	4*t_l[d] + t_s[d] >= d_s[d];
+	
+#Small_Demand {d in Days}:
+#	t_s[d] >= d_s[d];

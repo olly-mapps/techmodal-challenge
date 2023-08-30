@@ -16,4 +16,4 @@ option solver cplex;
 solve;
 
 #Outputs the variables of interest to an external text file.
-display t_s, t_l;
+#display t_s, t_l;

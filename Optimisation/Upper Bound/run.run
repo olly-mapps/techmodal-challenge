@@ -1,0 +1,19 @@
+reset; 
+
+#Calls the model file
+model model.mod;
+
+#Calls necessary data files
+data data.dat;
+
+#Allows for tracking of progress
+option cplex_options 'mipdisplay 3 mipgap 0.0005';
+
+#Sets solver to cplex
+option solver cplex;
+
+#Solves
+solve;
+
+#Outputs the variables of interest to an external text file.
+#display t_s, t_l;
