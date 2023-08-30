@@ -33,17 +33,27 @@ We wish to implement two key ideas:
 </strike>
   
 ### Optimisation Method
+<strike>
 - An optimisation procedure to determine fleet allocation, perhaps in the form of a LP/MIP.
   - Figure out how to ensure only one delivery per order ✅
-  - Perhapse use upper confidence interval to ensure robustness 
- 
+  - Perhapse use upper confidence interval to ensure robustness ✅
+</strike>
+
 ### Further Work
+<strike>
 - Determine profit if implementing optimal method ✅
-- Determine total loading times ✅
+- Determine total loading times ❎
+</strike>
+
+### Results
+
+Write a report or make bullet points in the form which accomplishes typical case study requirements.
 
 ## Questions for Mr Haulage 
 - How often to do you replace your fleet?
 - What is the fuel cost per distance, this way we could break your delivery routes down and optimise that as well.
+- Perhaps we could find sunk costs per hour of loading time?
+- More Predictors for the forecast? (Weather, Economic Indicators etc)
 
 
 
